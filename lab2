@@ -1,0 +1,49 @@
+#1
+hour = int(input("Sisesta tund (0–23): "))
+
+if hour < 6:
+    print("Öö")        
+elif hour < 12:
+    print("Hommik")     
+elif hour < 18:
+    print("Päev")       
+else:
+    print("Õhtu")     
+    
+#2 
+preference = input("Sisesta eelistus ('kuum' või 'külm'): ")
+
+if preference == "kuum":
+    drink_type = input("Sisesta tüüp ('tee' või 'kohv'): ")
+    
+    if drink_type == "tee":
+        print("Valmistame teed.")
+    else:
+        print("Valmistame kohvi.")
+else:
+    print("Valmistame limonaadi.")
+    
+#3 
+color = input("Sisesta värv ('punane', 'sinine' või muu): ")
+
+if color == "punane":
+    print("Ere")
+elif color == "sinine":
+    print("Rahulik")
+else:
+    print("Tavaline")
+    
+#4 
+transport = input("Sisesta transport (buss/jalgsi): ")
+weather = input("Sisesta weather (vihm/päike): ")
+
+if transport == "buss":
+    if weather == "vihm":
+        print("Sõidame bussiga katuse all.")
+    else:
+        print("Sõidame bussiga mugavalt.")
+else: 
+    if weather == "vihm":
+        print("Võtame vihmavarju.")
+    else: 
+        print("Läheme jalgsi.")
